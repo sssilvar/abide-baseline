@@ -1,6 +1,6 @@
 #!/bin/sh
 
-RAW_DATA_FOLDER="/user/ssilvari/home/Documents/data/ABIDE/ABIDE-I"
+RAW_DATA_FOLDER="/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I"
 SUBJECTS_DIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I_FS'
 
 for path in $(find "${RAW_DATA_FOLDER}"  -name "*.nii.gz")
