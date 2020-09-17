@@ -6,9 +6,10 @@
 
 FSDIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I_FS'
 
-recon-all -i $1 -s $2 -sd "/dev/shm" -all
-
-pid=$!
-wait ${pid}
-
-eval "mv /dev/shm/$2 ${FSDIR}"
+recon-all -i $1 -s $2 -sd "${FSDIR}" -all
+#recon-all -i $1 -s $2 -sd "/dev/shm" -all
+#
+#pid=$!
+#wait ${pid}
+#
+#eval "mv /dev/shm/$2 ${FSDIR}"
