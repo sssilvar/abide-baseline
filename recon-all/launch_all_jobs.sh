@@ -12,6 +12,7 @@ do
   # Check if directory does not exist. If it does, skip the job launching (less karma)
 	if [[ ! -d $subject_dir ]]
 	then
+	  echo "Launching job for subject ${sid}"
 		oarsub -S "./cross_job.sh $path $sid"
   else
     echo "Subject in folder ${subject_dir} was already processed."
