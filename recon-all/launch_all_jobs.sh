@@ -3,6 +3,8 @@
 RAW_DATA_FOLDER="/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I"
 SUBJECTS_DIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I_FS'
 
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 for path in $(find "${RAW_DATA_FOLDER}"  -name "*.nii.gz")
 do
   # Extract Subject ID from image SID.nii.gz
@@ -13,7 +15,7 @@ do
 	if [[ ! -d $subject_dir ]]
 	then
 	  echo "Launching job for subject ${sid}"
-		oarsub -S "./cross_job.sh $path $sid"
+		oarsub -S ".${CURRENT_DIR}/cross_job.sh $path $sid"
   else
     echo "Subject in folder ${subject_dir} was already processed."
 	fi
