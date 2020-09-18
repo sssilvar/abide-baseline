@@ -7,13 +7,14 @@ for path in $(find "${RAW_DATA_FOLDER}"  -name "*.nii.gz")
 do
   # Extract Subject ID from image SID.nii.gz
   sid=$(basename "${path}" | awk -F "." '{ print $1 }')
+  subject_dir="$SUBJECTS_DIR/$sid"
 
   # Check if directory does not exist. If it does, skip the job launching (less karma)
-	if [[ ! -d $dir ]]
+	if [[ ! -d $subject_dir ]]
 	then
 		echo "oarsub -S \"./cross_job.sh $path $sid\""
   else
-    echo "Subject in folder ${dir} was already processed."
+    echo "Subject in folder ${subject_dir} was already processed."
 	fi
 
   # Limit the number of jobs to 500
