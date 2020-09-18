@@ -11,7 +11,7 @@ do
   # Check if directory does not exist. If it does, skip the job launching (less karma)
 	if [[ ! -d $dir ]]
 	then
-		oarsub -S "./cross_job.sh $path $sid"
+		echo "oarsub -S \"./cross_job.sh $path $sid\""
 	fi
 
   # Limit the number of jobs to 500
