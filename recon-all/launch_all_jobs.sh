@@ -15,7 +15,7 @@ do
 	if [[ ! -d $subject_dir ]]
 	then
 	  echo "Launching job for subject ${sid}"
-		oarsub -S ".${CURRENT_DIR}/cross_job.sh $path $sid"
+		oarsub -S "${CURRENT_DIR}/cross_job.sh $path $sid"
   else
     echo "Subject in folder ${subject_dir} was already processed."
 	fi
