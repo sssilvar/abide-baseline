@@ -12,6 +12,8 @@ do
 	if [[ ! -d $dir ]]
 	then
 		echo "oarsub -S \"./cross_job.sh $path $sid\""
+  else
+    echo "Subject in folder ${dir} was already processed."
 	fi
 
   # Limit the number of jobs to 500
