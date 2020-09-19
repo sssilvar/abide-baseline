@@ -1,7 +1,7 @@
 #!/bin/sh
 
-RAW_DATA_FOLDER="/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I"
-SUBJECTS_DIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I_FS'
+RAW_DATA_FOLDER="/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-II"
+SUBJECTS_DIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-II_FS'
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

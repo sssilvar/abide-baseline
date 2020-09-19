@@ -4,7 +4,7 @@
 #OAR -O /home/ssilvari/logs/%jobid%.output
 #OAR -E /home/ssilvari/logs/%jobid%.error
 
-FSDIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I_FS'
+FSDIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-II_FS'
 
 if [ -z "$1" ]; then
     echo "First argument needed: T1 input file."
