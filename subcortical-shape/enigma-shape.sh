@@ -1,6 +1,6 @@
 #!/bin/sh
 #OAR -p mem_core>8000
-#OAR -l core=1,walltime=1:00:00
+#OAR -l core=1,walltime=2:00:00
 #OAR -O /home/ssilvari/logs/%jobid%.output
 #OAR -E /home/ssilvari/logs/%jobid%.error
 
