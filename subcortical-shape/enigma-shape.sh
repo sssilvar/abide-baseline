@@ -19,7 +19,8 @@ SUBJECT_FOLDER="${SUBJECTS_DIR}/${SUBJECT_ID}"
 echo "Extracting subcortical shape features from subject ${SUBJECT_ID}:"
 
 if [ ! -d "${SUBJECT_FOLDER}" ]; then
-    echo "Subject folder does not exist: ${SUBJECT_FOLDER}"
+    echo "Subject folder does not exist: ${SUBJECT_FOLDER}" 1>&2
+    exit 64
 fi
 
 exit
