@@ -6,6 +6,7 @@
 
 MEDIAL_DEMONS_DIR=${MEDIAL_DEMONS_DIR:="/home/ssilvari/Apps/MedialDemonsShared"}
 SUBJECT_ID=$1
+SUBJECTS_DIR=$2
 
 if [ -z "$SUBJECT_ID" ]; then
     echo "First argument needed: Subject ID has not been provided."
