@@ -24,8 +24,6 @@ if [ ! -d "${SUBJECT_FOLDER}" ]; then
     exit 64
 fi
 
-exit
-
 CMD="perl ${MEDIAL_DEMONS_DIR}/bin/Medial_Demons_shared.pl ${SUBJECT_FOLDER}/mri/aseg.mgz ${ROIS} ${SUBJECT_FOLDER}/shapes ${MEDIAL_DEMONS_DIR} ${FREESURFER_HOME}/bin"
 echo "${CMD}"
 eval "${CMD}"
