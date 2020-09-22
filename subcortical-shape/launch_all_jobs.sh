@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export SUBJECTS_DIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-I_FS'
+export SUBJECTS_DIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-II_FS'
 export MEDIAL_DEMONS_DIR="/home/ssilvari/Apps/MedialDemonsShared"
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
