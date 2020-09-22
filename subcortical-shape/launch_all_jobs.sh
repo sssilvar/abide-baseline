@@ -15,7 +15,7 @@ do
 	if [[ ! -d $results_directory ]]
 	then
 	  echo "Launching job for subject ${sid}"
-	  oarsub -S "env SUBJECTS_DIR=${SUBJECTS_DIR} ${CURRENT_DIR}/enigma-shape.sh ${sid}"
+	  oarsub -S "export SUBJECTS_DIR=${SUBJECTS_DIR} && ${CURRENT_DIR}/enigma-shape.sh ${sid}"
   else
     echo "Subject in folder ${results_directory} was already processed."
 	fi
