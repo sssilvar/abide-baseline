@@ -17,7 +17,7 @@ fi
 ROIS="10 11 12 13 17 18 26 49 50 51 52 53 54 58"
 SUBJECT_FOLDER="${SUBJECTS_DIR}/${SUBJECT_ID}"
 
-echo "Extracting subcortical shape features from subject ${SUBJECT_ID}:"
+echo "Extracting subcortical shape features from subject ${SUBJECT_ID} (${SUBJECT_FOLDER}):"
 
 if [ ! -d "${SUBJECT_FOLDER}" ]; then
     echo "Subject folder does not exist: ${SUBJECT_FOLDER}" 1>&2
