@@ -16,7 +16,6 @@ do
 	then
 	  echo "Launching job for subject ${sid}"
 	  oarsub -S "${CURRENT_DIR}/enigma-shape.sh \"${sid}\" \"${SUBJECTS_DIR}\""
-	  exit
   else
     echo "Subject in folder ${results_directory} was already processed."
 	fi
