@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export ESHAPE_DIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE-II_FS'
+export ESHAPE_DIR='/data/epione/user/ssilvari/RAW_DATASETS/ABIDE_SHAPE'
 export MEDIAL_DEMONS_DIR="/home/ssilvari/Apps/MedialDemonsShared"
 
 ROIS="10 11 12 13 17 18 26 49 50 51 52 53 54 58"
