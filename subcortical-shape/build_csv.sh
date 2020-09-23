@@ -10,6 +10,6 @@ CMD="${MEDIAL_DEMONS_DIR}/bin/raw_list2CSV_matrix ${ESHAPE_DIR}/LogJacs.csv ${ME
 echo "${CMD}"
 eval "${CMD}"
 
-CMD="${MEDIAL_DEMONS_DIR}/bin/raw_list2CSV_matrix ${ESHAPE_DIR}/LogJacs.csv ${MEDIAL_DEMONS_DIR}/atlas GOF ${ROIS} thick resliced_mesh ${GROUPFILE} ${ESHAPE_DIR}"
+CMD="${MEDIAL_DEMONS_DIR}/bin/raw_list2CSV_matrix ${ESHAPE_DIR}/thick.csv ${MEDIAL_DEMONS_DIR}/atlas GOF ${ROIS} thick resliced_mesh ${GROUPFILE} ${ESHAPE_DIR}"
 echo "${CMD}"
 eval "${CMD}"
