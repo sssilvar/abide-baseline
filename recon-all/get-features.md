@@ -41,6 +41,11 @@ If you don't know how to create the `subjects.txt` file, the simplest way is to 
 ls > subjects.txt
 ```
 
+## Combine the features in a single dataset using
+```bash
+curl -L "https://bit.ly/fs_join" | python -
+```
+
 ## Check for subjects that presented errors during the pipeline
 Some subjects might have not passed the quality check or did not converge during the process of segmentation from FreeSurfer.
 To identify them, we have to check the log file `recon-all.log` which is found inside each processed subject folder `scripts`.
